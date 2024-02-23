@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Roboto";
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../Fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "RobotoTitre";
+    src: url(../Fonts/Roboto/Roboto-Regular.ttf);
+}
+
+
+
+input[type=search]{
+    
+    width: 180px;
+    height: 25px;
+    border-radius: 10%;
+}
+
+input[type=button]{
+    all: unset;
+    height: 25px;
+    width: 100px;
+    background-color: #C0182A;
+    color: white;
+    border-radius: 6%;
+    cursor: pointer;
+    font-size: 10px;
+
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+h2, h3{
+    font-family: "RobotoTitre";
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: rgba(211, 211, 211, 0.456);
+    text-transform: uppercase;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+header a{
+    color: black;
+    font-family: "RobotoTitre";
+}
+
+header a:hover, footer a:hover{
+    color:#C0182A;
+}
+
+
+.banniere{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../Images/banner.jpg);
+    background-position: center;
+    background-size: cover;    
+    width: 100%;
+}
+
+.banniere img {
+    width:50vw;
+    padding-bottom: 20px;
+    margin-top: 10%;
+}
+
+.banniere h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 10%;
+}
+
+
+
+.section1{
+    text-align: center;
+    margin: 3rem 20% 3rem 20%;
+}
+
+.section1 h2{
+    margin-top: 3rem;
+}
+
+.section1 p{
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.btn1{
+    padding: 5px 20px 5px 20px;
+    background-color: #C0182A;
+    color: white;
+    border-radius: 6%;
+}
+
+.btn1:hover{
+   color: black;
+   font-family: "RobotoTitre";
+   
+}
+
+.section2>h2{
+    text-align: center;
+    margin: 6rem 0 3rem 0;
+}
+
+.actualite{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section{
+    width: 300px;
+    height: 400px;
+    margin: 1.5rem;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    border: 3px solid black ;
+    transition: all 0.1s linear;
+    cursor: pointer;
+
+}
+
+.section:hover{
+    box-shadow: 4px 4px 0px black;
+    transform: translate(-4px, -4px);
+}
+
+.section2>h2:hover{
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+    
+}
+
+.section img{
+    height: 40%;
+    width: 100%;
+}
+
+
+
+article{
+    padding:1rem
+}
+
+article h3{
+    margin: 2rem 0;
+}
+
+
+.footer1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(43, 43, 43);
+    height: 150px;
+    color: white;
+    margin-top: 10rem;
+    text-align: center;
+    text-transform: uppercase;
+    gap: 1rem;
+
+}
+
+.footer2{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer2 a{
+    color: white;
+}
+
+.footer2 ul{
+    margin-right: 10%;
+}
+
+
+footer img{
+    width: 100px;
+    height: 25px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+@media screen and (max-width:866px) {
+    .footer2 ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .banniere h2{
+        font-size: 25px;
+
+    }
+}
+
+
+@media screen and (max-width:425px) {
+    .banniere h2{
+        font-size: 20px;
+    }
+}
+
+
+
+@media screen and (max-width:380px) {
+
+
+    nav ul{
+        gap: 15px;
+        font-size: 13px;
+    }
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
